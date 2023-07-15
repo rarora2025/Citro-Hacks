@@ -14,7 +14,7 @@ export default function App() {
   const priceRange = {
       min: budget - 2000,
       max: parseInt(budget) + 2000 
-    }
+  };
   const monthlyPaymentRange = {
     min: monthly- 20,
     max: parseInt(monthly)+ 10
