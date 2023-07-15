@@ -46,3 +46,25 @@ export default function App() {
 
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title:{
+    fontSize:22,
+    fontWeight:"bold"
+  },
+  input:{
+    borderWidth:1,
+    borderRadius:30,
+    borderColor:"gray",
+    width:"80%",
+    height:40,
+    padding:10,
+    margin:5
+  }
+});
