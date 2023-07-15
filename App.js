@@ -6,9 +6,9 @@ import { Keyboard } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native';
 
 export default function App() {
-  const[budget,setBudget] = useState(0)
-  const [monthly,setMonthly]= useState(0)
-  const[distance,setDistance]= useState(0)
+  const[budget,setBudget] = useState()
+  const [monthly,setMonthly]= useState()
+  const[distance,setDistance]= useState()
 
   const calcRanges =() =>{
   const priceRange = {
