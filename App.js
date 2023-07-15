@@ -30,8 +30,6 @@ export default function App() {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss} 
-    accessible={false}>
      <View style={styles.container}>
       <Text style = {styles.title}>Find The Best Car In Your Budget</Text>
       <TextInput value={budget} onChangeText={text =>setBudget(text)}
@@ -42,7 +40,6 @@ export default function App() {
       keyboardType='number-pad' style = {styles.input} placeholder='Daily Commute Distance (miles)'/>
       <Button title = "Calculate Best Params" onPress = {calcRanges}/>
     </View>
-    </TouchableWithoutFeedback>
 
   );
 }
