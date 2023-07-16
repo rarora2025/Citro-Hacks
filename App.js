@@ -6,9 +6,9 @@ import { Keyboard } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native';
 
 export default function App() {
-  const[budget,setBudget] = useState()
-  const [monthly,setMonthly]= useState()
-  const[distance,setDistance]= useState()
+  const [budget,setBudget] = useState(0);
+  const [monthly,setMonthly]= useState(0);
+  const [distance,setDistance]= useState(0); 
 
   const calcRanges =() =>{
   const priceRange = {
@@ -32,7 +32,7 @@ export default function App() {
   return (
      <View style={styles.container}>
       <Text style = {styles.title}>Find The Best Car In Your Budget</Text>
-      <TextInput value={budget} onChangeText={text =>setBudget(text)}
+      <TextInput value={budget} onChangeText={text => setBudget(text)}
       keyboardType='number-pad' style = {styles.input} placeholder='Budget'/>
       <TextInput value = {monthly}  onChangeText={text => setMonthly(text)}
       keyboardType='number-pad' style = {styles.input} placeholder='Desired Monthly Payment'/>
